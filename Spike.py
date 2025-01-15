@@ -15,8 +15,8 @@ from datetime import datetime, timedelta, timezone
 MONGO_URI = 'mongodb+srv://Magic:Spike@cluster0.fa68l.mongodb.net/TEST?retryWrites=true&w=majority&appName=Cluster0'
 client = MongoClient(MONGO_URI)
 db = client['TEST']
-users_collection = db['users']
-settings_collection = db['settings']  # A new collection to store global settings
+users_collection = db['users-V4']
+settings_collection = db['settings-V4']  # A new collection to store global settings
 redeem_codes_collection = db['redeem_codes']
 attack_logs_collection = db['user_attack_logs']
 
